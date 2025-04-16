@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact.html">Emergency Contacts</a></li>
+        </ul>
+        <!-- Mobile Menu Toggle -->
+        <div class="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <!-- Our Services Section -->
+    <section id="services" class="content-section dark-bg">
+        <div class="container">
+            <h2>For easier access to our services;</h2>
+            <!-- Registration Form -->
+            <div class="service-form">
+                <h2>Register with Us</h2>
+            <form id="registration-form">
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <!-- Password Field -->
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8">
+                </div>
+                <!-- Date Field -->
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <!-- Dropdown Field -->
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <!-- Radio Buttons -->
+<div class="form-group">
+    <label class="form-label">Subscription Plan:</label> <br>
+    <div class="form-options">
+        <div class="form-option">
+            <input type="radio" id="basic" name="plan" value="basic" required class="form-radio">
+            <label for="basic" class="option-label">Basic Plan</label>
+        </div>
+        <div class="form-option">
+            <input type="radio" id="premium" name="plan" value="premium" class="form-radio">
+            <label for="premium" class="option-label">Premium Plan</label>
+        </div>
+    </div>
+</div>
+
+<!-- Checkboxes -->
+<div class="form-group">
+    <label class="form-label">Interests:</label>
+    <div class="form-options">
+        <div class="form-option">
+            <input type="checkbox" id="web-design" name="interests" value="web-design" class="form-checkbox">
+            <label for="web-design" class="option-label">Web Design</label>
+        </div>
+        <div class="form-option">
+            <input type="checkbox" id="seo" name="interests" value="seo" class="form-checkbox">
+            <label for="seo" class="option-label">Web Hosting</label>
+        </div>
+        <div class="form-option">
+            <input type="checkbox" id="marketing" name="interests" value="marketing" class="form-checkbox">
+            <label for="marketing" class="option-label">Digital Marketing</label>
+        </div>
+    </div>
+</div>
+                <!-- Submit Button -->
+                <div style="display: flex; justify-content: center;">
+                    <button type="submit" class="hero-btn1">Register</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4 class="footer-heading">Services</h4>
+            <ul class="footer-list">
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Web Hosting</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4 class="footer-heading">Information</h4>
+            <ul class="footer-list">
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <br>
+                <li>Monday - Friday (9am-5pm)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="legal-info">
+        <p>&copy; 2025. All rights reserved. <span class="tagline">Building Digital Excellence</span></p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<!-- <script>
+    // Mobile menu toggle
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links a');
+
+    // Toggle mobile menu
+    burgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        burgerMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu on click
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            burgerMenu.classList.remove('active');
+        });
+    });
+</script> -->
+</body>
+</html>

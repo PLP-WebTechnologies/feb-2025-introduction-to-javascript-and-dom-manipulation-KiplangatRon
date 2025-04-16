@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>| Craft-Chip |</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <!-- Navigation Section -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact.html">Emergency Contacts</a></li>
+        </ul>
+        <!-- Mobile Menu Toggle -->
+        <div class="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="text-box">
+        
+            <h1 class="text-ron">Welcome to Craft-Chip</h1>
+            <h2>Kenya's Most Loved Web Service</h2>
+            <p>This is a steady-growing web service provider in the country. 
+               <br>Our efficiency and effectiveness in web design, web hosting and related service provision puts us at the forefront and within reach 
+                of our clients.</p>
+                <br>
+                <br>
+            <a href="services.html" class="hero-btn">Book our services</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4 class="footer-heading">Services</h4>
+            <ul class="footer-list">
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Web Hosting</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4 class="footer-heading">Information</h4>
+            <ul class="footer-list">
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <br>
+                <li>Monday - Friday (9am-5pm)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="legal-info">
+        <p>&copy; 2025. All rights reserved. <span class="tagline">Building Digital Excellence</span></p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+    <!-- <script>
+        // Mobile menu toggle
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navLinks = document.querySelector('.nav-links');
+        const navItems = document.querySelectorAll('.nav-links a');
+
+        // Toggle mobile menu
+        burgerMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            burgerMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu on click
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                burgerMenu.classList.remove('active');
+            });
+        });
+    </script> -->
+</body>
+</html>
